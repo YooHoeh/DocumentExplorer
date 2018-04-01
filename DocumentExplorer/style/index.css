@@ -1,0 +1,284 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form,
+	fieldset, input, p, blockquote, th, td {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 12px;
+	color: #666;
+	font-family: Verdana, Microsoft YaHei, Simsun;
+	background: teal;
+	line-height: 24px;
+}
+
+fieldset, img {
+	border: 0;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+
+em {
+	font-style: normal;
+}
+
+input, button, select, textarea {
+	outline: none;
+}
+
+p {
+	text-align: justify;
+	text-justify: distribute;
+	cursor:default;
+}
+
+
+a {
+	color: #666;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #f60;
+	text-decoration: none;
+}
+h1{
+	margin-top:8px;
+	text-align:center;
+	color:#fff;
+}
+.mainwindow{
+	width:70%;
+	height:80%;
+	margin:13px auto;
+	border:5px teal double;
+	overflow:hidden;
+	border-radius:12px;
+	background:#fff;
+}
+/*右键菜单*/
+.contexmenu {
+	z-index:999;
+	position:fixed;
+	display:none;
+	width:80px;
+	height:175px;
+	padding: 8px;
+	border: 1px #fff solid;
+	border-radius:10px;
+	background-color:darkgrey;
+}
+.contexmenu li{
+	padding:3px;
+}
+
+.contexmenu li:hover {
+	border-radius:3px;
+	background-color:teal;
+	color:white;
+}
+
+/*导航栏*/
+.navBar {
+	width:100%;
+	height:50px;
+	background:steelblue;
+	display:block;
+	overflow:hidden;
+}
+/*前进后退箭头*/
+.Arrow {
+	position:relative;
+	top:20%;
+	left:5px;
+	width: 15px;
+	height:15px;
+	border-left: 12px #20C3CC solid;
+	border-top: 12px #20C3CC solid;
+	border-radius: 5px;
+	display:inline-block;
+	margin-left:5px;
+}
+.prev {
+	transform: rotate(-45deg);
+}
+.next {
+	transform: rotate(135deg);
+}
+.Arrow:hover {
+	border-left: 12px #00ff80 solid;
+	border-top: 12px #00ff80 solid;
+}
+.Arrow:active {
+	top:25%;
+}
+.localBar {
+	position:relative;
+	float:right;
+	display:block;
+	top:8%;
+	margin-right:5px;
+	background:#fff;
+	border:1px #999 solid;
+	border-radius:3px;
+	height:40px;
+	width:90%;
+	overflow:hidden;
+}
+
+.refresh {
+	float:left;
+	position:relative;
+	left:15px;
+	top:10%;
+	border-radius:50%;
+	overflow:hidden;
+	width:34px;
+	height:33px;
+	overflow:hidden;
+}
+.refresh img{
+	position:relative;
+	width:100%;
+	height:100%;
+}
+	
+.refresh img:active{
+	top:1px;
+}
+.address{
+	float:left;
+	position:relative;
+	left:8px; 
+	top:10%;
+	height:33px;
+	width:70%;
+	text-indent:5px;
+	transition:width 0.5s;	
+}
+.address:focus {
+	width:90%;
+}
+
+.enter {
+	position:relative;
+	top:8%;
+	left:-5px;
+	float:left;
+	border-radius:50%;
+	width:34px;
+	height:34px;
+	border:none;
+	background:#20C3CC;
+	font-size:20px;
+	font-weight:bold;
+	color:#fff;
+}
+.enter:active {
+	top:1px;
+}
+.serach {
+	float:left;
+	position:relative;
+	top:10%;
+	left:20px;
+	height:34px;
+	width:20%;
+}
+.serachfile {
+	float:left;
+	position:relative;
+	top:10%;
+	border-radius:50%;
+	overflow:hidden;
+	width:34px;
+	height:34px;
+	overflow:hidden;
+}
+.serachfile img{
+	position:relative;
+	width:100%;
+	height:100%;
+}
+.serachfile img:active{
+	top:1px;
+}
+
+.home {
+	float:left;
+	position:relative;
+	top:10%;
+	margin:3px;
+	border-radius:50%;
+	overflow:hidden;
+	width:34px;
+	height:34px;
+	overflow:hidden;
+}
+.home img {
+	position:relative;
+	width:100%;
+	height:100%;
+}
+.home img:active {
+	top:1px;
+}
+
+
+/*文档窗口*/
+.documentView {
+	position:relative;
+	margin:5px;
+	float:left;
+	width:75%;
+	height:91%;
+	border:5px #20C3CC double;
+	border-radius:5px;
+	display:inline-block;
+	overflow-y:scroll;
+}
+.type{
+	text-align:center;
+	position:relative;
+	padding-top: 60px;
+	float:left;
+	width:70px;
+	height:20px;
+	margin:10px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.type:hover{
+	background-color:#8cf2f2;
+}
+.file{
+	background:url(../images/file_ico.png) no-repeat 50% 20%;
+}
+.dir{
+	background:url(../images/folder_ico.png) no-repeat 50% 20%;
+}
+/*文件详情*/
+.fileDetail {
+	float:left; 
+	position:relative;
+	display:inline-block;
+	margin:5px;
+	width:21%;
+	height:91%;
+	border:5px #20C3CC double;
+	border-radius:5px;
+}
+.fileDetail .small{
+	width:25px;
+	height: 25px;
+}
+.fileDetail dt{
+	font-weight: 800;	
+}
+.fileDetail dl,.fileDetail dd{
+	margin-left: 30px;
+}
